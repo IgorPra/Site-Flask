@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+</head>
+<body>
+    <h1>Contatos</h1>
+    <ul>
+       {% for contato in contatos %}
+            <li>{{contato.nome}} - {{contato.telefone}} :
+                <a href="/editar/{{contato.id}}">Editar</a>
+                <a href="/deletar/{{contato.id}}">Deletar</a></li>
+        {% endfor %}
+
+    </ul>
+    <a href="/registrar">Registrar Contato</a>
+</body>
+</html>
