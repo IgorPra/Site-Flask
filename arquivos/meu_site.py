@@ -8,7 +8,7 @@ app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///dados.db"
 db.init_app(app)
 
 
-from routes import *
+from routes  import *
 
 if __name__ == '__main__':
     with app.app_context():
